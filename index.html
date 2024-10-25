@@ -5,177 +5,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page - Proyecto Integrador</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 
-    <!-- Header -->
     <header class="d-flex justify-content-center align-items-center p-3 bg-dark text-white">
-        <h1 class="h3">Mi Página</h1>
+        <h1 class="h3">Plataforma de Aprendizaje de Programación</h1>
     </header>
 
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Sitio Web</a>
+            <div class="navbar-brand me-auto">
+                <img src="./img/imagen1.png" alt="Logo" class="img-fluid">
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto d-flex">
+                <ul class="navbar-nav ms-auto d-flex align-items-center">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Servicios</a>
+                        <a class="nav-link" href="#">Cursos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca de</a>
+                        <a class="nav-link" href="#">Recursos</a>
                     </li>
                     <li class="nav-item d-none d-lg-block">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#">Comunidad</a>
                     </li>
                 </ul>
             </div>
+            <a class="btn btn-primary d-none d-md-block ms-3" href="#">Contáctanos</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+
     <section class="hero-section bg-primary text-white text-center p-3 p-md-5">
-        <h1 class="text-uppercase">Bienvenidos a nuestra Aplicación</h1>
-        <p class="lead">Soluciones innovadoras para la identificación de plagas y enfermedades.</p>
-        <a href="#features" class="btn btn-light mt-3">Descubre más</a>
+        <h1 class="text-uppercase">Bienvenidos a nuestra Plataforma de Aprendizaje</h1>
+        <p class="lead">Aprende a programar con nuestros cursos interactivos y recursos innovadores.</p>
+        <a href="#features" class="btn btn-light mt-3">Explora nuestros cursos</a>
     </section>
 
-    <!-- Sección de Características -->
     <section id="features" class="py-5">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-4 mb-4">
                     <div class="card border-primary p-3">
-                        <i class="bi bi-bug text-primary mb-3"></i>
-                        <h5 class="card-title">Identificación Precisa</h5>
-                        <p class="card-text">Sube fotos de tus cultivos para identificar plagas y enfermedades.</p>
+                        <i class="bi bi-laptop text-primary mb-3"></i>
+                        <h5 class="card-title">Cursos Interactivos</h5>
+                        <p class="card-text">Accede a cursos diseñados para mejorar tus habilidades de programación de manera práctica.</p>
+                        <a href="https://www.xataka.com/otros/31-cursos-gratis-para-aprender-a-programar-cero" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Explorar Cursos</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card border-success p-3">
-                        <i class="bi bi-leaf text-success mb-3"></i>
-                        <h5 class="card-title">Control Ecológico</h5>
-                        <p class="card-text">Recibe recomendaciones de control de plagas basadas en prácticas ecológicas.</p>
+                        <i class="bi bi-book text-success mb-3"></i>
+                        <h5 class="card-title">Recursos y Materiales</h5>
+                        <p class="card-text">Descarga recursos útiles y materiales de estudio para complementar tu aprendizaje.</p>
+                        <a href="https://www.classgap.com/es-co/blog/recursos-aprender-programar-online" class="btn btn-success" target="_blank" rel="noopener noreferrer">Ver Recursos</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4 d-none d-lg-block">
                     <div class="card border-warning p-3">
                         <i class="bi bi-bell text-warning mb-3"></i>
-                        <h5 class="card-title">Alertas Regionales</h5>
-                        <p class="card-text">Recibe notificaciones sobre brotes de plagas en tu zona.</p>
+                        <h5 class="card-title">Notificaciones de Actualización</h5>
+                        <p class="card-text">Recibe notificaciones sobre nuevos cursos y actualizaciones en nuestra plataforma.</p>
+                        <a href="#" class="btn btn-warning" target="_blank" rel="noopener noreferrer">Suscribirse</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Galería -->
-    <section class="container p-2">
-        <h1 class="text-center text-primary">Galería</h1>
-        <div class="row justify-content-center my-4">
-            <div class="col-6 col-md-4 d-flex justify-content-center">
-                <img src="https://placehold.co/200x200/black/white?text=." alt="Imagen1" class="m-3 img-fluid">
-            </div>
-            <div class="col-6 col-md-4 d-flex justify-content-center">
-                <img src="https://placehold.co/200x200/aqua/black?text=." alt="Imagen2" class="m-3 img-fluid">
-            </div>
-            <div class="col-6 col-md-4 d-flex justify-content-center">
-                <img src="https://placehold.co/200x200/black/white?text=." alt="Imagen3" class="m-3 img-fluid">
-            </div>
-        </div>
-        <div class="row justify-content-center my-4">
-            <div class="col-6 col-md-4 d-flex justify-content-center">
-                <img src="https://placehold.co/200x200/aqua/black?text=." alt="Imagen4" class="m-3 img-fluid">
-            </div>
-            <div class="col-6 col-md-4 d-flex justify-content-center">
-                <img src="https://placehold.co/200x200/black/white?text=." alt="Imagen5" class="m-3 img-fluid">
-            </div>
-            <div class="col-6 col-md-4 d-flex justify-content-center">
-                <img src="https://placehold.co/200x200/aqua/black?text=." alt="Imagen6" class="m-3 img-fluid">
             </div>
         </div>
     </section>
     
-    <!-- Bordes y Estilos -->
+
     <section class="container my-5">
-        <h1 class="text-center text-primary mb-4">Bordes y Estilos</h1>
-        <div class="row mt-4">
-            <div class="col-md-6 mb-4">
-                <div class="card text-center border border-primary rounded" style="width: 100%;">
-                    <div class="card-body">
-                        <h5 class="card-title">Tarjeta</h5>
-                        <p class="card-text">Descripción de la tarjeta.</p>
+        <h1 class="text-center text-black mb-4">Lenguajes de Programación Populares</h1>
+        <div id="programmingCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/javascript.png" class="d-block w-75 mx-auto" alt="JavaScript">
+                    <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.5);">
+                        <h5>JavaScript</h5>
+                        <p>Un lenguaje de programación versátil y popular para el desarrollo web.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/pyhton.jpg" class="d-block w-75 mx-auto" alt="Python">
+                    <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.5);">
+                        <h5>Python</h5>
+                        <p>Un lenguaje de programación fácil de aprender, ideal para principiantes.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/java.png" class="d-block w-75 mx-auto" alt="Java">
+                    <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.5);">
+                        <h5>Java</h5>
+                        <p>Un lenguaje de programación robusto y ampliamente utilizado en aplicaciones empresariales.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/c_icon.png" class="d-block w-75 mx-auto" alt="C#">
+                    <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.5);">
+                        <h5>C#</h5>
+                        <p>Un lenguaje de programación moderno y orientado a objetos, ideal para desarrollo de aplicaciones.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
-                <div class="card text-center border-top border-danger" style="width: 100%;">
-                    <div class="card-body">
-                        <h5 class="card-title">Tarjeta</h5>
-                        <p class="card-text">Descripción de la tarjeta.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-md-6 mb-4">
-                <div class="card text-center border border-success border-3" style="width: 100%;">
-                    <div class="card-body">
-                        <h5 class="card-title">Tarjeta</h5>
-                        <p class="card-text">Descripción de la tarjeta.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card border border-warning rounded-pill text-center" style="width: 100%;">
-                    <div class="card-body">
-                        <h5 class="card-title">Tarjeta</h5>
-                        <p class="card-text">Descripción de la tarjeta.</p>
-                    </div>
-                </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#programmingCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#programmingCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-dark text-white py-4">
         <div class="container">
             <div class="row d-flex justify-content-around text-center">
-                <!-- Sección Sobre Nosotros -->
                 <div class="col-12 col-md-4 mb-4 mb-md-0">
                     <h5>Sobre Nosotros</h5>
-                    <p>Proporcionamos soluciones para la identificación y control de plagas en cultivos.</p>
+                    <p>Ofrecemos recursos y herramientas para facilitar el aprendizaje de desarrollo de software.</p>
                 </div>
-                <!-- Sección Enlaces Útiles -->
                 <div class="col-12 col-md-4 mb-4 mb-md-0">
                     <h5>Enlaces Útiles</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Términos y condiciones</a></li>
-                        <li><a href="#" class="text-white">Política de privacidad</a></li>
+                        <li><a href="#" class="text-white">Guías y tutoriales</a></li>
+                        <li><a href="#" class="text-white">Recursos adicionales</a></li>
                     </ul>
                 </div>
-                <!-- Sección Contáctanos -->
                 <div class="col-12 col-md-4">
                     <h5>Contáctanos</h5>
-                    <p>info@aplicacion.com</p>
-                    <p>Tel: +57 123 456 7890</p>
+                    <p>info@desarrollosoftware.com</p>
+                    <p>Tel: +57 321 654 9870</p>
                 </div>
             </div>
-            <!-- Línea de separación y copyright -->
             <div class="text-center border-top border-secondary mt-4 pt-3">
-                <p>&copy; 2024 Aplicación de Identificación de Plagas. Todos los derechos reservados.</p>
+                <p>&copy; 2024 Desarrollo de Software. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 </html>
