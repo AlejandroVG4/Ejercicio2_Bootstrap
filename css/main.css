@@ -9,16 +9,20 @@
 
 @media (max-width: 576px) {
     .navbar-brand img {
-        max-width: 15%; /* Tamaño más pequeño en pantallas XS */
+        max-width: 15%; 
     }
 }
 
 #programmingCarousel {
-    max-width: 800px; /* Ajusta el ancho máximo del carrusel */
-    margin: 0 auto; /* Centra el carrusel */
+    max-width: 800px; 
+    margin: 0 auto; 
 }
 
 .carousel-item img {
-    max-height: 400px; /* Limita la altura máxima de las imágenes */
-    object-fit: contain; /* Asegura que la imagen se escale correctamente */
+    max-height: 400px; 
+    object-fit: contain;
+}
+
+.bg-dark-transparent {
+    background: rgba(0, 0, 0, 0.5);
 }
